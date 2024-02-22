@@ -1,0 +1,1062 @@
+{
+	"info": {
+		"_postman_id": "04540c17-c581-403e-828b-392c6ee8e4d4",
+		"name": "PruebaTec4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32122039"
+	},
+	"item": [
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "localhost:8080/agency/hotels",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/new",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"hotelId\": 2,\r\n  \"name\": \"Hotel Catalonia\",\r\n  \"city\": \"Barcelona\",\r\n  \"roomList\": []\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotels/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/1/rooms/edit/5",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomType\": \"Double\",\r\n    \"priceNight\": 350.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotels/1/rooms/edit/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"1",
+								"rooms",
+								"edit",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/delete/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AppUser",
+			"item": [
+				{
+					"name": "localhost:8080/appuser/new",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"36527377A\",\r\n    \"name\": \"Javier\",\r\n    \"lastName\": \"Espinosa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/appuser/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"appuser",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/appuser/36527377A",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/appuser/36527377A",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"appuser",
+								"36527377A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/appuser/list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/appuser/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"appuser",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/appuser/edit/36527377A",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"36527361A\",\r\n    \"name\": \"Javier\",\r\n    \"lastName\": \"Espinosa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/appuser/edit/36527377A",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"appuser",
+								"edit",
+								"36527377A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/appuser/delete/36527377A",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/appuser/delete/36527377A",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"appuser",
+								"delete",
+								"36527377A"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "localhost:8080/agency/hotels/1/rooms/new",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomType\": \"Single\",\r\n    \"priceNight\": 200.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotels/3/rooms/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"3",
+								"rooms",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/1/rooms",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/1/rooms",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"1",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/1/rooms/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/1/rooms/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"1",
+								"rooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotels/1/rooms/delete/6",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/1/rooms/delete/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"1",
+								"rooms",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking Room",
+			"item": [
+				{
+					"name": "localhost:8080/agency/hotel-booking/new",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dateFrom\": \"2024-04-01\",\r\n  \"dateTo\": \"2024-04-07\",\r\n  \"room\": {\r\n    \"code\": 12\r\n  },\r\n  \"clients\": [\r\n    {\r\n      \"dni\": \"36527361A\"\t\r\n\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotel-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotel-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotel-booking/list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotel-booking/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotel-booking",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotel-booking/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotel-booking/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotel-booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotel-booking/edit/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateFrom\": \"2024-03-16\",\r\n    \"dateTo\": \"2024-03-21\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotel-booking/edit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotel-booking",
+								"edit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/hotel-booking/delete/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotel-booking/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotel-booking",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flight",
+			"item": [
+				{
+					"name": "localhost:8080/agency/flights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flights",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/newFlight",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"BADU-3434\",\r\n  \"origin\": \"Barcelona\",\r\n  \"destination\": \"Dubai\",\r\n  \"seatType\": \"Business\",\r\n  \"price\": 660.00,\r\n  \"seats\": 50,\r\n  \"departureDate\": \"2024-04-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/newFlight",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"newFlight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/flights/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flights/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/editFlight/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"BADU-3434\",\r\n  \"origin\": \"Barcelona\",\r\n  \"destination\": \"Dubai\",\r\n  \"seatType\": \"Business\",\r\n  \"price\": 860.00,\r\n  \"seats\": 40,\r\n  \"departureDate\": \"2024-04-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/editFlight/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"editFlight",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/deleteFlight/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/deleteFlight/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"deleteFlight",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking Flight",
+			"item": [
+				{
+					"name": "localhost:8080/agency/flight-booking/list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/flight-booking/new",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"flight\": {\r\n    \"code\": \"BADU-1234\"\r\n  },\r\n  \"clients\": [\r\n    {\r\n      \"dni\": \"36527361A\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/flight-booking/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/agency/flight-booking/delete/1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
